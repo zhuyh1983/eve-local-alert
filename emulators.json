@@ -1,0 +1,8 @@
+{
+  "emulators": [
+    {"name": "主号", "serial": "emulator-5554", "enabled": true},
+    {"name": "二号", "serial": "emulator-5556", "enabled": true},
+    {"name": "三号", "serial": "emulator-5558", "enabled": true},
+    {"name": "四号", "serial": "emulator-5560", "enabled": true}
+  ]
+}

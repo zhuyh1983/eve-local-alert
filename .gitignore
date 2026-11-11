@@ -1,0 +1,20 @@
+# 运行时数据（含游戏截图、名单状态、日志）不要上传
+.tmp/
+build/
+dist/
+_internal/
+__pycache__/
+*.pyc
+*.spec
+
+# 本机配置与凭据
+qq_config.json
+qq_config.local.json
+.napcat/
+napcat/
+napcat_backup_41838/
+
+# 临时/探测脚本
+_probe_*.ps1
+_probe_*.py
+*.part.png

@@ -1,0 +1,50 @@
+{
+  "_说明": "复制本文件为 qq_config.json。通道任选一种：onebot（本机 NapCat/Lagrange 的 HTTP 服务，文字+截图）、qqwindow（往已登录 QQ 窗口粘贴，文字+截图，无需任何机器人权限）、qmsg（QQ 群云端转发，只有文字）、wecom/dingtalk/feishu（群机器人 webhook）、telegram（需要代理）、pushplus/serverchan（微信推送，只有文字）。",
+  "enabled": false,
+  "channel": "qqwindow",
+  "at_all": false,
+
+  "qqwindow": {
+    "_说明": "把 QQ 停在目标群聊天页，每轮报警会粘贴到输入框并回车",
+    "click_input": true
+  },
+
+  "onebot": {
+    "url": "http://127.0.0.1:3000",
+    "access_token": "",
+    "target_type": "private",
+    "target_id": 0,
+    "timeout": 15
+  },
+
+  "webhook": {
+    "_说明": "kind 可选 wecom / dingtalk / feishu / telegram",
+    "kind": "wecom",
+    "url": "",
+    "token": "",
+    "chat_id": "",
+    "proxy": "",
+    "timeout": 15
+  },
+
+  "qmsg": {
+    "key": "",
+    "target_qq": 0,
+    "target_group": 0,
+    "api": "https://qmsg.zendee.cn/v3/send",
+    "timeout": 15
+  },
+
+  "pushplus": {
+    "token": "",
+    "topic": "",
+    "api": "https://www.pushplus.plus/send",
+    "timeout": 15
+  },
+
+  "serverchan": {
+    "sendkey": "",
+    "api": "https://sctapi.ftqq.com",
+    "timeout": 15
+  }
+}
